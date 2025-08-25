@@ -51,6 +51,44 @@ A Flutter-based markdown editor application for macOS that provides a split-pane
 
 ## Development
 
+### Running Tests
+
+The app includes comprehensive unit and widget tests.
+
+```bash
+# Run all tests
+flutter test
+
+# Run tests with detailed output
+flutter test --reporter=expanded
+
+# Run tests with coverage report
+flutter test --coverage
+
+# Run specific test file
+flutter test test/document_state_test.dart
+```
+
+#### Test Coverage
+
+The test suite covers:
+- **Widget tests**: UI components and user interactions
+- **Unit tests**: DocumentState model functionality
+- **File operations**: Opening, saving, and managing files
+- **State management**: Content updates and change notifications
+
+Coverage report is generated in `coverage/lcov.info` and can be viewed with:
+```bash
+# Install lcov (macOS)
+brew install lcov
+
+# Generate HTML coverage report
+genhtml coverage/lcov.info -o coverage/html
+
+# Open coverage report
+open coverage/html/index.html
+```
+
 ### Cleaning the Build
 
 To clean all build artifacts and start fresh:
