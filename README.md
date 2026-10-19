@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Markdown Flutter logo" width="180">
+</p>
+
 # Markdown Editor
 
 A Flutter-based markdown editor application for macOS that provides a split-pane interface for editing and previewing markdown documents.
